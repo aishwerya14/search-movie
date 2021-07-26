@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search Movie</title>
+		<meta charset="UTF-8" />
+		 <!-- FontAwesome CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+		<!-- Google font CDN -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700,800&amp;display=swap" rel="stylesheet">
+		 <!-- Style -->
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<div class="top-bar">
+			<div class="container">
+				<div class="top-bar-inner">
+					<div>
+						<h3 class="brand">Movie Search</h3>
+						<h3 class="resp-brand">MS</h3>
+					</div>
+					<div>
+						<form>
+							<input id="search" type="text" placeholder="Search movie" />
+							<button><i class="fas fa-search"></i></button>
+						</form>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="banner">
+			<div class="container">
+				<div class="movie-info">
+					<h6 id="movie-year"></h6>
+					<h1 id="movie-title"></h1>
+					<p id="plot"></p>
+					<div class="meta-info">
+						<p id="imdbRating"></p>
+						<p id="genre"></p>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div id="movie-detail">
+			<div class="container">
+				<div class="movie-poster">
+					<img alt="movie-poster" width="300" height="445" />
+				</div>
+				<div class="movie-detail-content">
+					<ul class="meta-info">
+						<li id="rated"></li>
+						<li id="runtime"></li>
+								
+					</ul>
+					<ul class="desc">
+						<li>
+							<h3>Director : </h3>
+							<p id="director"></p>
+						</li>
+						<li>
+							<h3>Writers : </h3>
+							<p id="writer"></p>
+						</li>
+						<li>
+							<h3>Starring : </h3>
+							<p id="actors"></p>
+						</li>	
+						<li>
+							<h3>Language : </h3>
+							<p id="language"></p>
+						</li>
+					</ul>		
+					<div class="tabs">
+						<div class="tab">
+							<input type="checkbox" id="chck1">
+							<label class="tab-label btn" for="chck1">See Detail</label>
+							<div class="tab-content">
+								<div>
+									<div class="item-list">
+										<div class="item">
+											<h3>Country : </h3>
+											<p id="country"></p>
+										</div>
+										<div class="item">
+											<h3>DVD : </h3>
+											<p id="dVD"></p>
+										</div>
+										<div class="item">
+											<h3>Production : </h3>
+											<p id="production"></p>
+										</div>
+									</div>
+									<div class="item-list">
+										<div class="item">
+											<h3>IMDB Votes : </h3>
+											<p id="imdbVotes"></p>
+										</div>
+										<div class="item">
+											<h3>Box Office : </h3>
+											<p id="boxOffice"></p>
+										</div>
+										<div class="item">
+											<h3>IMDB ID : </h3>
+											<p id="imdbID"></p>		
+										</div>
+									</div>
+									<div class="item-list">
+										<div class="item">
+											<h3>Released : </h3>						
+											<p id="released"></p>
+										</div>
+										<div class="item">
+											<h3>Awards : </h3>
+											<p id="awards"></p>
+										</div>
+										<div class="item">
+											<h3>Metascore : </h3>
+											<p id="metascore"></p>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
